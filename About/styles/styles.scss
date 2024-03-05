@@ -209,6 +209,7 @@ body {
 
     > div {
       width: 750px;
+
       > P {
         color: black;
         font-size: 40px;
@@ -242,6 +243,11 @@ body {
       width: 700px;
       display: block;
       margin-right: 60px;
+
+      @include leptop {
+        width: 500px;
+        margin-left: 45px;
+      }
       > P {
         color: white;
         font-size: 25px;
@@ -263,6 +269,14 @@ body {
     section {
       display: block;
       width: 700px;
+
+      @include leptop {
+        width: 500px;
+      }
+
+      @include tablet {
+        width: 400px;
+      }
 
       > p {
         color: white;

@@ -1,5 +1,15 @@
 @mixin leptop {
-  @media (max-width: 1350px) {
+  @media (max-width: 1440px) {
+    @content;
+  }
+}
+@mixin leptop2 {
+  @media (max-width: 1240px) {
+    @content;
+  }
+}
+@mixin tablet {
+  @media (max-width: 1024px) {
     @content;
   }
 }

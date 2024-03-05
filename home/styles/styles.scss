@@ -221,50 +221,50 @@ body {
     }
     @include mobile2 {
       margin-top: 10%;
+    }
 
-      > div {
-        > p {
-          width: 550px;
-          text-align: center;
-          font-size: 100px;
-          color: rgb(255, 196, 0);
+    > div {
+      > p {
+        width: 550px;
+        text-align: center;
+        font-size: 100px;
+        color: rgb(255, 196, 0);
 
-          @include leptop {
-            font-size: 70px;
-            width: 380px;
-          }
-          @include mobile {
-            font-size: 45px;
-            width: 230px;
-          }
-          @include mobile2 {
-            font-size: 35px;
-            width: 180px;
-          }
+        @include leptop {
+          font-size: 70px;
+          width: 380px;
         }
-        > h1 {
-          font-size: 23px;
-          margin-left: 25%;
-          margin-top: 30px;
+        @include mobile {
+          font-size: 45px;
+          width: 230px;
+        }
+        @include mobile2 {
+          font-size: 35px;
+          width: 180px;
+        }
+      }
+      > h1 {
+        font-size: 23px;
+        margin-left: 25%;
+        margin-top: 30px;
 
-          @include leptop {
-            font-size: 20px;
-            margin-left: 22%;
-            margin-top: 25px;
-          }
-          @include mobile {
-            font-size: 17px;
-            margin-top: 20px;
-            margin-left: 18%;
-          }
-          @include mobile2 {
-            font-size: 14px;
-            margin-top: 15px;
-            margin-left: 13%;
-          }
-          > a {
-            color: black;
-          }
+        @include leptop {
+          font-size: 20px;
+          margin-left: 22%;
+          margin-top: 25px;
+        }
+        @include mobile {
+          font-size: 17px;
+          margin-top: 20px;
+          margin-left: 18%;
+        }
+        @include mobile2 {
+          font-size: 14px;
+          margin-top: 15px;
+          margin-left: 13%;
+        }
+        > a {
+          color: black;
         }
       }
     }

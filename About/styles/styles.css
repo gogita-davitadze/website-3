@@ -156,7 +156,7 @@ body header nav > P {
   color: black;
   font-size: 45px;
 }
-@media (max-width: 1350px) {
+@media (max-width: 1440px) {
   body header nav > P {
     font-size: 35px;
   }
@@ -186,7 +186,7 @@ body header nav > ul > li > a {
   margin-left: 45px;
   text-decoration: none;
 }
-@media (max-width: 1350px) {
+@media (max-width: 1440px) {
   body header nav > ul > li > a {
     font-size: 20px;
     margin-left: 37px;
@@ -356,6 +356,12 @@ body footer > div {
   display: block;
   margin-right: 60px;
 }
+@media (max-width: 1440px) {
+  body footer > div {
+    width: 500px;
+    margin-left: 45px;
+  }
+}
 body footer > div > P {
   color: white;
   font-size: 25px;
@@ -375,6 +381,16 @@ body footer > div > h2 > a {
 body footer section {
   display: block;
   width: 700px;
+}
+@media (max-width: 1440px) {
+  body footer section {
+    width: 500px;
+  }
+}
+@media (max-width: 1024px) {
+  body footer section {
+    width: 400px;
+  }
 }
 body footer section > p {
   color: white;
