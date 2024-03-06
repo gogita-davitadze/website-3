@@ -325,11 +325,27 @@ body main {
 body main > div {
   width: 750px;
 }
+@media (max-width: 768px) {
+  body main > div {
+    width: 450px;
+  }
+}
+@media (max-width: 425px) {
+  body main > div {
+    width: 310px;
+  }
+}
 body main > div > P {
   color: black;
   font-size: 40px;
   margin-bottom: 50px;
   margin-top: 100px;
+}
+@media (max-width: 768px) {
+  body main > div > P {
+    font-size: 35px;
+    margin-left: 40px;
+  }
 }
 body main > div > h1 {
   font-family: sans-serif;
@@ -337,10 +353,33 @@ body main > div > h1 {
   font-size: 25px;
   margin-top: 40px;
 }
+@media (max-width: 768px) {
+  body main > div > h1 {
+    margin-left: 40px;
+    font-size: 22px;
+  }
+}
+@media (max-width: 425px) {
+  body main > div > h1 {
+    font-size: 18px;
+  }
+}
 body main > div > img {
   margin-top: 50px;
   width: 750px;
   height: 500px;
+}
+@media (max-width: 768px) {
+  body main > div > img {
+    width: 420px;
+    height: 270px;
+  }
+}
+@media (max-width: 425px) {
+  body main > div > img {
+    width: 300px;
+    height: 200px;
+  }
 }
 body footer {
   margin-top: 50px;
@@ -351,6 +390,19 @@ body footer {
   align-items: center;
   justify-content: center;
 }
+@media (max-width: 768px) {
+  body footer {
+    display: block;
+    height: 500px;
+  }
+}
+@media (max-width: 425px) {
+  body footer {
+    display: block;
+    height: 500px;
+    margin: 0;
+  }
+}
 body footer > div {
   width: 700px;
   display: block;
@@ -360,6 +412,17 @@ body footer > div {
   body footer > div {
     width: 500px;
     margin-left: 45px;
+  }
+}
+@media (max-width: 768px) {
+  body footer > div {
+    width: 400px;
+    padding-top: 30px;
+  }
+}
+@media (max-width: 425px) {
+  body footer > div {
+    width: 300px;
   }
 }
 body footer > div > P {
@@ -390,6 +453,19 @@ body footer section {
 @media (max-width: 1024px) {
   body footer section {
     width: 400px;
+    margin-left: 20px;
+  }
+}
+@media (max-width: 768px) {
+  body footer section {
+    width: 350px;
+    margin-left: 40px;
+    margin-top: 55px;
+  }
+}
+@media (max-width: 425px) {
+  body footer section {
+    width: 300px;
   }
 }
 body footer section > p {
@@ -414,12 +490,30 @@ body footer section > div > input {
   border-radius: 10px;
   font-size: 17px;
 }
+@media (max-width: 1024px) {
+  body footer section > div > input {
+    width: 250px;
+    height: 37px;
+  }
+}
+@media (max-width: 768px) {
+  body footer section > div > input {
+    width: 190px;
+    height: 35px;
+  }
+}
 body footer section > div > button {
   width: 120px;
   background-color: #0f6466;
   border: none;
   border-radius: 10px;
   color: white;
+}
+@media (max-width: 768px) {
+  body footer section > div > button {
+    width: 100px;
+    font-size: 10px;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */

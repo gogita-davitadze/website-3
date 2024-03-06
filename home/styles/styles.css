@@ -137,12 +137,20 @@ body {
   background: url(../image/image.jpg);
   background-size: cover;
   width: 100%;
-  height: 100%;
+  height: 1350px;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+@media (max-width: 1350px) {
+  body {
+    height: 1220px;
+  }
 }
 @media (max-width: 768px) {
   body {
-    height: 896px;
+    background: url(../image/image2.png);
+    width: 100%;
+    height: 820px;
+    background-size: cover;
   }
 }
 body header nav {
@@ -203,13 +211,13 @@ body header nav > ul > li > a {
 }
 @media (max-width: 768px) {
   body header nav > ul > li > a {
-    font-size: 15px;
+    font-size: 19px;
     margin-left: 19px;
   }
 }
 @media (max-width: 425px) {
   body header nav > ul > li > a {
-    font-size: 10px;
+    font-size: 15px;
     margin-left: 14px;
   }
 }
@@ -244,8 +252,7 @@ body header .card svg {
 }
 body header .card .social-link1,
 body header .card .social-link2,
-body header .card .social-link3,
-body header .card .social-link4 {
+body header .card .social-link3 {
   position: relative;
   display: flex;
   align-items: center;
@@ -300,18 +307,6 @@ body header .card .social-link3:hover {
     height: 35px;
   }
 }
-body header .card .social-link4:hover {
-  width: 45px;
-  height: 45px;
-  background-color: #12a50b;
-  animation: bounce_613 0.4s linear;
-}
-@media (max-width: 768px) {
-  body header .card .social-link4:hover {
-    width: 35px;
-    height: 35px;
-  }
-}
 @keyframes bounce_613 {
   40% {
     transform: scale(1.4);
@@ -338,12 +333,12 @@ body main {
 }
 @media (max-width: 768px) {
   body main {
-    margin-top: 10%;
+    margin-top: 20%;
   }
 }
 @media (max-width: 425px) {
   body main {
-    margin-top: 10%;
+    margin-top: 20%;
   }
 }
 body main > div > p {
@@ -366,8 +361,8 @@ body main > div > p {
 }
 @media (max-width: 425px) {
   body main > div > p {
-    font-size: 35px;
-    width: 180px;
+    font-size: 45px;
+    width: 220px;
   }
 }
 body main > div > h1 {

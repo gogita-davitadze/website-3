@@ -210,22 +210,51 @@ body {
     > div {
       width: 750px;
 
+      @include mobile {
+        width: 450px;
+      }
+      @include mobile2 {
+        width: 310px;
+      }
+
       > P {
         color: black;
         font-size: 40px;
         margin-bottom: 50px;
         margin-top: 100px;
+
+        @include mobile {
+          font-size: 35px;
+          margin-left: 40px;
+        }
       }
       > h1 {
         font-family: sans-serif;
         color: #191919;
         font-size: 25px;
         margin-top: 40px;
+
+        @include mobile {
+          margin-left: 40px;
+          font-size: 22px;
+        }
+        @include mobile2 {
+          font-size: 18px;
+        }
       }
       > img {
         margin-top: 50px;
         width: 750px;
         height: 500px;
+
+        @include mobile {
+          width: 420px;
+          height: 270px;
+        }
+        @include mobile2 {
+          width: 300px;
+          height: 200px;
+        }
       }
     }
   }
@@ -239,6 +268,16 @@ body {
     align-items: center;
     justify-content: center;
 
+    @include mobile {
+      display: block;
+      height: 500px;
+    }
+    @include mobile2 {
+      display: block;
+      height: 500px;
+      margin: 0;
+    }
+
     > div {
       width: 700px;
       display: block;
@@ -247,6 +286,15 @@ body {
       @include leptop {
         width: 500px;
         margin-left: 45px;
+      }
+
+      @include mobile {
+        width: 400px;
+        padding-top: 30px;
+      }
+
+      @include mobile2 {
+        width: 300px;
       }
       > P {
         color: white;
@@ -276,6 +324,17 @@ body {
 
       @include tablet {
         width: 400px;
+        margin-left: 20px;
+      }
+
+      @include mobile {
+        width: 350px;
+        margin-left: 40px;
+        margin-top: 55px;
+      }
+
+      @include mobile2 {
+        width: 300px;
       }
 
       > p {
@@ -298,6 +357,15 @@ body {
           border: none;
           border-radius: 10px;
           font-size: 17px;
+
+          @include tablet {
+            width: 250px;
+            height: 37px;
+          }
+          @include mobile {
+            width: 190px;
+            height: 35px;
+          }
         }
         > button {
           width: 120px;
@@ -305,6 +373,11 @@ body {
           border: none;
           border-radius: 10px;
           color: white;
+
+          @include mobile {
+            width: 100px;
+            font-size: 10px;
+          }
         }
       }
     }

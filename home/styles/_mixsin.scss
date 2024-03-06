@@ -1,3 +1,9 @@
+@mixin dekstop {
+  @media (max-width: 2400px) {
+    @content;
+  }
+}
+
 @mixin leptop {
   @media (max-width: 1350px) {
     @content;
